@@ -32,7 +32,7 @@ namespace DuckCollectionMuseum
             if (useMacPollingMode)
             {
                 // macOS: 使用轮询监听器（避免 Harmony 兼容性问题）
-                InventoryDisplayMonitor.Initialize();
+                MacInventoryDisplayMonitor.Initialize();
                 ModLogger.Info("已启用 macOS 轮询模式");
             }
             else
@@ -55,7 +55,7 @@ namespace DuckCollectionMuseum
             if (useMacPollingMode)
             {
                 // 关闭 macOS 监听器
-                InventoryDisplayMonitor.Shutdown();
+                MacInventoryDisplayMonitor.Shutdown();
             }
             else
             {
