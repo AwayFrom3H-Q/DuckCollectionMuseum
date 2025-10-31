@@ -13,7 +13,7 @@ namespace DuckCollectionMuseum.UI
     {
         private static readonly (string Label, Comparison<Item> Comparison)[] myButtonList =
         {
-            ("瞿博志", (a, b) => b.GetTotalRawValue().CompareTo(a.GetTotalRawValue())),
+            ("Museum", (a, b) => b.GetTotalRawValue().CompareTo(a.GetTotalRawValue())),
         };
 
         public static bool[] Visibility = {
